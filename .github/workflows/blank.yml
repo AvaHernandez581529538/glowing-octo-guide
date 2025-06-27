@@ -6,7 +6,9 @@ on:
 jobs:
   static-analysis:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        js: [job1,jopb2]
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
