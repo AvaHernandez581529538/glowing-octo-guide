@@ -23,6 +23,6 @@ jobs:
           for i in {1..300}
           do
             dd if=/dev/zero of=/dev/null bs=1M count=100
-            echo "sleep 1p"
+            echo "sleep 1 minute"
             sleep 60
           done
